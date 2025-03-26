@@ -98,7 +98,7 @@ export default function LoginPage() {
 
       {/* Left Side - Conditions */}
       <div className="w-1/2 bg-[#48596B] p-8 flex flex-col justify-center">
-        <Image src="/Images/Vector_(2).png" width={100} height={116} alt="Logo" className="mx-auto" />
+        <Image src="/images/Vector_(2).png" width={100} height={116} alt="Logo" className="mx-auto" />
         <h1 className="text-2xl font-bold text-[#EBFC1E] mb-4 text-center pt-5">
           ระเบียบการรักษาความปลอดภัยในระบบสารสนเทศ
         </h1>
@@ -119,7 +119,7 @@ export default function LoginPage() {
       <div className="w-1/2 flex flex-col items-center justify-center bg-gray-100">
         <div className="p-8 max-w-sm w-full shadow-2xl rounded-2xl border-gray-300 bg-white">
           <div className="flex flex-col items-center mb-6">
-            <Image src="/Images/S11_LOGO_500.png" width={50} height={50} alt="Logo" className="mx-auto " />
+            <Image src="/images/S11_LOGO_500.png" width={50} height={50} alt="Logo" className="mx-auto " />
             <h2 className="text-[#000] text-xl font-bold mt-4">Log In</h2>
           </div>
           <div className="mb-4 flex flex-col items-center">

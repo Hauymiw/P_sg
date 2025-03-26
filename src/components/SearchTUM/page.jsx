@@ -132,7 +132,7 @@ const handleInputChange = (e) => {
                         onKeyDown={handleKeyDown} // เพิ่มการจับคีย์บอร์ด
                     />
                     {/* ไอคอนลบ */}
-                        <img src="/Images/delete.png" 
+                        <img src="/images/delete.png" 
                             alt="ลบ" 
                             className="clear-icon" 
                             onClick={clearInput} // ลบข้อมูลเมื่อคลิก

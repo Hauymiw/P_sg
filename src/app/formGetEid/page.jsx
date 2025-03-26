@@ -218,7 +218,7 @@ const formGetEid = () => {
                                 <button className="ml-2" onClick={() => setEndDate("")}
                                     type="button" >
                                     <img
-                                        src="/Images/delete.png" 
+                                        src="/images/delete.png" 
                                         alt="Delete"
                                         className="w-6 h-6 cursor-pointer item-center"
                                     />

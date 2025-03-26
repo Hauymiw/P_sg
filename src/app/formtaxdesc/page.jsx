@@ -888,7 +888,7 @@ export default function EmployeeForm() {
                                                         onClick={() => setFormData({ ...formData, member: "" })}
                                                         type="button" >
                                                         <img
-                                                            src="/Images/delete.png"
+                                                            src="/images/delete.png"
                                                             alt="Delete"
                                                             className="w-6 h-6 cursor-pointer item-center"
                                                         />
@@ -911,7 +911,7 @@ export default function EmployeeForm() {
                                                         onClick={() => setFormData({ ...formData, pole: "" })}
                                                         type="button" >
                                                         <img
-                                                            src="/Images/delete.png"
+                                                            src="/images/delete.png"
                                                             alt="Delete"
                                                             className="w-6 h-6 cursor-pointer item-center"
                                                         />

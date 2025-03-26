@@ -20,7 +20,7 @@ const Header = ({ HeaderText }) => {
         <div>
             <div className="bg-white shadow-md p-2 flex justify-between items-center">
                 <div className="flex items-center">
-                    <Image src="/Images/S11_LOGO_500.png" width={30} height={30} alt="Logo" className="imgLogo " />
+                    <Image src="/images/S11_LOGO_500.png" width={30} height={30} alt="Logo" className="imgLogo " />
                     <div>
                         <p className="text-[16px] text-gray-600 pl-3">
                             {HeaderText || "S 11 GROUP "}
