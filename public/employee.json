@@ -1,0 +1,47 @@
+[
+  {
+    "employee_id": "93486",
+    "first_name": "ธัญญารัตน์",
+    "last_name": "ละชินลา",
+    "group": "Junior",
+    "gate" : "1",
+    "profile_picture": "/images/Em-img/images.jpg",
+    "password": "1234"
+  },
+  {
+    "employee_id": "23814",
+    "first_name": "สุพรีม",
+    "last_name": "วงศ์สว่าง",
+    "group": "Mid",
+    "gate" : "1",
+    "profile_picture": "/images/Em-img/images (1).jpg",
+    "password": "1234"
+  },
+  {
+    "employee_id": "43898",
+    "first_name": "ยมลกานต์ ",
+    "last_name": "วสุหิรัญ",
+    "group": "Senior",
+    "gate" : "2",
+    "profile_picture": "/images/Em-img/Catcover_web.jpg",
+    "password": "1234"
+  },
+  {
+    "employee_id": "E004",
+    "first_name": "ปภพ",
+    "last_name": "วัฒนาพงษ์",
+    "group": "Junior",
+    "gate" : "1",
+    "profile_picture": "/images/Em-img/cat-breed-01-800x800.webp",
+    "password": "1234"
+  },
+  {
+    "employee_id": "10469",
+    "first_name": "วันเฉลิม",
+    "last_name": "บอยค้าบ",
+    "group": "Senior",
+    "gate" : "2",
+    "profile_picture": "/images/Em-img/7507fc8a87b444b69dfa21c7b448c481.jpg", 
+    "password": "1234"
+  }
+]

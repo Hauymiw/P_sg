@@ -1,0 +1,201 @@
+.Group_input {
+    display: flex;
+    margin-top: 5px;
+}
+.Group_input input {
+    height: 15px;
+    width: 15px;
+    margin: 8px 6px 0 3px;
+}
+.Margin_bottom {
+    margin-bottom: 6px;
+}
+.Group_grid .Group_text {
+    text-align: right;
+    padding: 0 10px 0 0 ;
+}
+
+.Group_grid .Group_text {
+    text-align: right;
+    padding: 0 10px 0 0 ;
+    color: #000;
+
+}
+.Group_grid .Group_ask {
+    border: 1px solid #869BAF;
+    border-radius: 4px;
+    color: #000;
+}
+.Group_grid .Group_ask .category {
+    width: 100%;
+    padding: 0 0 0 5px;
+    color: #000;
+
+}
+/*     กำหนดแถวคอลัม      */
+.menu {
+    min-width: 1050px;
+}
+.content {
+    min-width: 1125px;
+    padding-top: 20px;
+}
+.grid-columms {
+    display: grid;
+    grid-template-columns: 210px 300px 310px 300px;
+    width: 1120px;
+    margin: 12px 0;
+}
+.grid-columms-1 {
+    display: flex;
+    justify-content: right;
+}
+.grid-columms-2 {
+    display: grid;
+    grid-template-columns: 120px 100px 80px;
+}
+.grid-columms-3 {
+    display: grid;
+    grid-template-columns: 150px 50px 100px;
+}
+.grid-columms-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid-columms-2-2 {
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+.grid-columms-2-3 {
+    display: flex;
+    justify-content: left;
+}
+
+.statusEmp {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #869BAF;
+    border-radius: 5px;
+    color: #0043F1;
+    font-size: 16px;
+    background-color: #D5DBE2;
+}
+
+.grid-columms .text_prefix, .text_name_th {
+    color: #000;
+    font-size: 16px;
+    text-align: right;
+    margin: 6px 0 0 0;
+    padding: 0 10px 0 0;
+}
+.text_name_th_i {
+    color: #000;
+    font-size: 16px;
+    text-align: right;
+    margin: 6px 0 0 0;
+}
+.grid-columms .input_prefix, .input_name_th {
+    border: 1px solid #869BAF;
+    border-radius: 5px;
+    color: #0043F1;
+    font-size: 16px;
+    padding: 6px 0;
+    background-color: #D5DBE2;
+    width: 100%;
+    height: 100%;
+}
+.input_name_en {
+    border: 1px solid #869BAF;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    padding: 6px 0;
+    background-color: #ffff;
+    width: 100%;
+    height: 100%;
+}
+.grid-columms .text_sex {
+    color: #000;
+    font-size: 16px;
+    text-align: right;
+    padding: 6px 0;
+}
+.grid-columms .text_status {
+    color: #000;
+    font-size: 16px;
+    text-align: right;
+    padding: 6px 0;
+    margin: 0 auto;
+}
+.grid-columms .category {
+    border: 1px solid #869BAF;
+    width: 100%;
+    border-radius: 5px;
+    color: #0043F1;
+    font-size: 16px;
+    height: 100%;
+    padding: 6px 10px;
+    background-color: #D5DBE2;
+
+}
+
+.grid-columms .detel_status {
+    cursor: pointer;
+}
+.grid-columms .detel_status:hover {
+    border-Radius: 50%;
+    padding: 0px;
+    padding-right: 0px;
+    cursor: pointer;
+    transition: 1ms;
+}
+.grid-columms .info_icon {
+    margin: 0 8px;
+    color: #6D6D6D;
+}
+.grid-columms .detel_st {   /*คำอธิบาย*/
+    position: absolute;
+    background-color: #000000c1 ;
+    color: #ffff;
+    border-radius: 9px ;
+    width: 160px;
+    right: 32px;
+    top: 0px;
+    padding: 10px 20px;
+}
+.detel_statusBy {
+    position: relative;
+}
+.detel_st_By {
+    position: absolute;
+    background-color: #000000c1 ;
+    color: #ffff;
+    border-radius: 9px ;
+    width: 160px;
+    right: 32px;
+    top: 0px;
+    padding: 10px 20px; 
+}
+
+.input_birthday {
+    border: 1px solid #869BAF;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    padding: 6px 10px;
+    background-color: #ffff;
+    height: 100%;
+    width: 100%;
+}
+
+.input_age {
+    border: 1px solid #869BAF;
+    border-radius: 5px;
+    color: #0043F1;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+    background-color: #D5DBE2;
+}

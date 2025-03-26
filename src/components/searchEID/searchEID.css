@@ -1,0 +1,167 @@
+/* สไตล์พื้นหลังมืด (Overlay) */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .title-close {
+    justify-content: space-between; /* จัดตำแหน่งหัวข้อและปุ่มให้อยู่ห่างกัน */
+    margin-bottom: 8px;
+    display: grid;
+  }
+  /* กล่อง Modal */
+  .modal-container {
+    background: #DCE1E7;
+    padding: 20px;
+    border-radius: 0 0 6px 6px ;
+    width: 600px;
+    height: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* เพิ่ม overflow เพื่อควบคุมขนาดภายใน */
+    display: flex;
+    flex-direction: column;
+    position: relative; /* เพิ่มตำแหน่ง relative เพื่อจัดตำแหน่งปุ่มภายใน */
+    
+  }
+  
+  /* หัวข้อ Modal */
+  .modal-title {
+    font-size: 18px;
+    /* margin-bottom: 2px; */
+    background-color: #48596B; /* เพิ่มแถบสีดำที่หัวข้อ */
+    color: white; /* เปลี่ยนข้อความเป็นสีขาว */
+    padding: 10px 20px; /* เพิ่มการเว้นระยะให้หัวข้อ */
+    border-radius: 6px 6px 0 0; 
+  }
+  
+  /* กล่อง input + ปุ่ม */
+  .modal-input-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 1px;
+    margin-top: 1px;
+
+  }
+  
+  /* Input ค้นหา */
+  .search-input {
+    border: 1px solid #68829BCC;
+    padding: 8px;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .search-input:focus {
+    border-color: #008E00;
+  }
+  
+  /* กลุ่มปุ่ม */
+  .button-group {
+    display: flex;
+    gap: 12px;
+    margin-left: auto;
+  }
+  
+  /* ปุ่ม */
+  .btn {
+    padding: 8px 24px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  
+  .btn .icon {
+    margin-right: 8px;
+  }
+  
+  .btn:hover {
+    opacity: 0.4;
+  }
+  
+  /* ปุ่มบันทึก */
+  .btn-save {
+    background: #008E00;
+  }
+  
+  /* ปุ่มยกเลิก */
+  .btn-cancel {
+    background: gray;
+  }
+  
+  /* ตาราง */
+  .table-container {
+    background: #fff;
+    margin-top: 10px;
+    width: 100%;
+    flex-grow: 1; /* ทำให้ตารางเติบโตเต็มพื้นที่ */
+    min-height: auto;
+    overflow-y: auto; /* เปิดการเลื่อนในแนวตั้ง */
+    max-height: 200px;
+    border: 1px solid #68829BCC;
+
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .table-header {
+    background: #D9D9D9;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .table-cell {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* แถวในตาราง */
+  .table-row {
+    cursor: pointer;
+  }
+  
+  .hover-row:hover {
+    background: #f0f0f0;
+  }
+  
+  /* แถวที่ถูกเลือก */
+  .selected-row {
+    background: #cccccc;
+  }
+  
+  /* ข้อความไม่มีข้อมูล */
+  .table-no-data {
+    padding: 8px;
+    color: gray;
+    text-align: center;
+  }
+  
+  /* ปุ่มปิด */
+  .close-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    top: 2px;
+    border-radius: 4px;
+    margin-inline-start: 450px; /* ดันปุ่มไปทางขวาสุด */
+  }
+  
+  .close-button svg {
+    color: #fff; /* เปลี่ยนสีไอคอน */
+    
+  }

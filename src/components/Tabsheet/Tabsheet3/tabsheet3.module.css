@@ -1,0 +1,200 @@
+.container {
+    width: 1fr;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    background-color: #f3f4f6;
+    overflow-y: auto;
+}
+
+.formbox {
+    width: 1fr;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box1 {
+    align-items: flex-start;
+}
+
+.box1g {
+    padding: 20px;
+}
+
+.box2 {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.Box2Col2 {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.Box2Col2input {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    text-align: start;
+    padding: auto;
+    border: 1px solid rgb(0, 255, 64);
+}
+
+.Box2Col2input input {
+    border: 1px solid rgb(0, 255, 64);
+}
+
+.checkboxlarge {
+    width: 20px;
+    height: 20px;
+    accent-color: #008E00;
+}
+
+.Box2Col2input label {
+    width: 1fr;
+    text-align: start;
+    padding: 0 10px 0 10px;
+}
+
+.flexlabelinputg1 {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    gap: 10px;
+    margin: 0px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.flexlabelinputg1 input{
+    border: 1px solid #869BAF;
+    padding: 6px 10px 6px 10px;
+}
+
+.flexlabelinput {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    gap: 20px;
+    margin: 0px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.flexlabelinput label {
+    text-align: right;
+    width: auto;
+}
+
+.flexlabelinputg1 input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #869BAF;
+    outline: none;
+}
+
+.container input:focus {
+    border-width: 1px;
+    border-color: #4CAF50;
+    outline: 1px solid #008E00;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    background-color: #f3f4f6;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.formbox {
+    width: 100%;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.box1 {
+    align-items: flex-start;
+}
+
+.box1g {
+    padding: 20px;
+}
+
+.box2 {
+    align-items: flex-start;
+}
+
+.flexlabelinput {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    gap: 20px;
+    margin: 0px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.flexlabelinput label {
+    text-align: right;
+    width: auto;
+}
+
+.flexlabelinput input {
+    width: 50%;
+    border: 1px solid #869BAF;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 220px 120px 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.labelcheckbox {
+    width: 100px;
+}
+
+.label2 {
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.inputbox1 {
+    border: 1px solid #869BAF;
+    width: 1fr;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 0.25rem;
+}
+
+.checkboxlarge {
+    width: 20px;
+    height: 20px;
+    accent-color: #008E00;
+}
+
+.label1 {
+    white-space: nowrap;
+    width: 180px;
+    padding-top: 5px;
+}

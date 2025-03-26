@@ -1,0 +1,217 @@
+.area_bk_pupup {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: fixed; /* ทำให้ popup อยู่บนหน้า */
+    top: 0;
+    left: 0;
+    z-index: 9999; /* ทำให้ popup อยู่ด้านบนสุด */
+    background: rgba(0, 0, 0, 0.5); /* เพิ่มพื้นหลังโปร่งใสเพื่อให้ดูเป็นโมดอล */
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กลาง */
+    align-items: center; /* จัดให้กลางแนวตั้ง */
+}
+.areaTUM {
+    width: 600px;
+    height: 430px;
+    font-size: 16px;
+    padding: 20px;
+    background-color: #D9D9D9;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 45%; 
+    left: 50%;
+    border-radius: 5px;
+    box-shadow:  16px 16px 48px #00000080
+}
+.input_search_TUM  {
+    background-color: #FFFFFF;
+    border: 1px solid #008E00;
+    width: 92%;
+    height: 45px;
+    padding: 0 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    background-image: url('../../../public/images/search.png')  ;
+    background-position: 10px 10px; /* ตำแหน่งของไอคอน */
+    background-repeat: no-repeat; /* ไม่ให้ไอคอนซ้ำ */
+    
+}
+.input_search_TUM:focus {
+    border: 1px solid #008E00; /* กำหนดเส้นขอบสีแดงเมื่อโฟกัส */
+    outline: none; /* ลบเส้นขอบค่าเริ่มต้นของเบราว์เซอร์ */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.showResults {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 10px;
+    min-height: auto;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 2px;
+    overflow-y: auto;
+    width: 92%;
+    max-height: 275px;
+}
+/* สไตล์ของแต่ละรายการใน dropdown */
+.dropdown_li {
+    padding: 8px 16px; 
+    cursor: pointer; 
+    border-bottom: 1px solid #D9D9D9;
+}
+.dropdown_li:hover {
+    background-color: #B3DDB3; 
+}
+
+.bnt_sh {
+    position: relative; /* กำหนดให้เป็น parent ของปุ่ม */
+    min-height: 60px; /* ปรับให้สูงพอสำหรับเห็นผล */
+    width: 600px;
+    position: absolute;
+    top: 66.5%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.bnt_cel, .bnt_ok {
+    position: absolute;
+    margin: 0 20px 20px 0;
+}
+
+.bnt_cel {
+    width: 90px;
+    padding: 5px 0;
+    border-radius: 5px;
+    color: #48596B;
+    background-color: #B9C3CF;
+    margin-left: 15px;
+    right: 10px; /* ปุ่ม OK อยู่ขวาสุด */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid red; */
+}
+.bnt_ok {
+    width: 90px;
+    padding: 5px 0;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #008E00;
+    right: 110px; /* ปุ่ม Cancel อยู่ก่อน OK */
+    /* border: 1px solid red; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bnt_cel:hover, .bnt_ok:hover {
+    opacity: 0.55;
+}
+
+.showResults {
+    max-height: 200px; /* จำกัดความสูงของ dropdown */
+    overflow-y: auto; /* เพิ่ม scroll เมื่อรายการเกินขนาด */
+    border: 1px solid #ccc;
+    background-color: white;
+}
+/*สำหรับกดคีย์บอร์ดเลื่อน*/
+.selected {
+    background-color: #B3DDB3;
+}
+/*ตำแหน่งถึงขยะ*/
+.input-container {
+    position: relative;
+    /* border: 1px solid red; */
+    text-align: left;
+}
+
+.clear-icon {
+    position: absolute;
+    right: 0px; /* กำหนดระยะห่างจากขวา */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 26px; /* ปรับขนาดของไอคอนตามที่ต้องการ */
+    height: 26px;
+    margin-right: 0px;
+}
+
+
+/* .popupContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    z-index: 1000;
+    
+}
+
+.popupContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+    height: 430px;
+    font-size: 16px;
+    padding: 20px;
+    background-color: #D9D9D9;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 45%; 
+    left: 50%;
+    border-radius: 5px;
+    box-shadow:  16px 16px 48px #00000080;
+    
+}
+
+.input-container input {
+    background-color: #FFFFFF;
+    border: 1px solid #008E00;
+    width: 92%;
+    height: 45px;
+    padding: 0 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: url('../../../public/images/search.png')  ;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat; 
+    
+}
+
+.warning {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.resultList {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+}
+
+.resultList li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.resultList li:hover {
+    border: 1px solid #008E00;  
+    outline: none;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+} */

@@ -1,0 +1,58 @@
+[
+    {
+      "id": "001",
+      "employeeId": "83711",
+      "password": "1234", 
+      "name": "เสาวลักษณ์ หอมแก้ว",
+      "department": "DataAnalyst",
+      "position": "เจ้าหน้าที่",
+      "email": "bank.saowaluk@gmail.com"
+    },
+    {
+      "id": "002",
+      "employeeId": "12345",
+      "password": "1234", 
+      "name": "วรรณิศา แตงทองคำ",
+      "department": "ฝ่ายUX-UI",
+      "position": "ผู้จัดการ",
+      "email": ""
+    },
+    {
+      "id": "003",
+      "employeeId": "67899",
+      "password": "1234", 
+      "name": "อัศรา ศรีบุรินทร์",
+      "department": "ฝ่ายบุคคล",
+      "position": "เจ้าหน้าที่",
+      "email": ""
+    },
+    {
+      "id": "004",
+      "employeeId": "23814",
+      "password": "1234", 
+      "name": "ณัชชา เคารพ",
+      "department": "ฝ่ายบัญชี",
+      "position": "เจ้าหน้าที่",
+      "email": ""
+    },
+    {
+      "id": "005",
+      "employeeId": "11626",
+      "password": "1234", 
+      "name": "อัจฉรา ขันโท",
+      "department": "ฝ่ายบริหารลูกหนี้",
+      "position": "ผู้ช่วยผู้จัดการ",
+      "email": ""
+    },
+    {
+      "id": "006",
+      "employeeId": "83401",
+      "password": "1234", 
+      "name": "สุภาพร ทัติวงษ์",
+      "department": "ฝ่ายสินเชื่อและการตลาด",
+      "position": "เจ้าหน้าที่",
+      "email": ""
+    }
+
+
+  ]

@@ -1,0 +1,59 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    background-color: #f3f4f6;
+    overflow-y: auto;
+    font-size: 14px;
+
+
+}
+
+.formbox {
+    width: 100%;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+
+
+}
+
+.box1g {
+    padding: 10px;
+}
+
+
+.flexlabelinput {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    gap: 10px;
+    margin: 0px;
+    margin-top: 5px;
+    align-items: center;
+
+}
+
+.flexlabelinput label {
+    text-align: right;
+    width: auto;
+}
+
+.flexlabelinput input {
+    width: 70%;
+    border: 1px solid #869BAF;
+    padding: 6px 10px 6px 10px;
+
+}
+
+.container input:focus {
+    border-width: 1px; 
+    border-color: #4CAF50;
+    outline: 1px solid #008E00;  
+}

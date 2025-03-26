@@ -1,0 +1,31 @@
+/* styles.css */
+
+/* Tooltip container */
+.tooltip {
+    position: absolute;
+    display: none;
+    padding: 10px;
+    margin-top: 40px;
+    text-align: left;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: white;
+    background-color: #000000;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    width: auto;
+    white-space:  pre-wrap;
+
+}
+
+/* แสดง tooltip เมื่อ hover บน parent element */
+.group:hover .tooltip {
+    display: block;
+}
+
+/* กำหนดตำแหน่งให้กับ tooltip (ตัวอย่าง: top-0, left-0) */
+.tooltip.top-left {
+    top: 0;
+    left: 0;
+}

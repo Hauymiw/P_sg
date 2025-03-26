@@ -1,0 +1,14 @@
+
+select {
+    border: 1px solid #869BAF;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    padding: 6px 10px;
+    width: 100%;
+}
+
+select option {
+    padding: 10px;
+}
+

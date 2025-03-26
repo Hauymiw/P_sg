@@ -1,0 +1,205 @@
+body {
+    min-width: 1450px;
+}
+.red {
+    border: 1px solid red;
+}
+input, select {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.flex {
+    display: flex;
+}
+.grid_2c {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid_3c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid_3c_s {
+    display: grid;
+    grid-template-columns: 1fr 25% 1fr;
+}
+.grid_4c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.text_radio {
+    margin: 12px 0 0 0;
+}
+.text_padding {
+    padding: 6px 10px;
+}
+.text_padding_radio {
+    padding: 0px 10px;
+}
+/*ข้อความในเรดิโอ*/
+.checkbox {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px 0 0;
+}
+.Group_checkbox {
+    display: flex;
+    margin-top: 15px;
+    font-size: 1px;
+}
+.Content {
+    padding: 15px 15px;
+    padding-bottom: 25px;
+    font-size: 14px;
+}
+/*พื้นที่ในกรอบสีเขียว*/
+.box_Content {
+    padding: 0 25px ;
+}
+.border_869BAF{
+    border: 1px solid #869BAF;
+    border-radius: 5px;
+}
+main {
+    font-size: 10px;
+}
+/*พื้นที่ทั้งหมด*/
+.Main_grid_3c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    width: 1680;
+    /* max-width: 1500px; */
+    /* min-width: 700px;  */
+}
+/*แบ่ง 2 คอลัม Tab2*/
+.Main_grid_2c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    /* width: 1680; */
+    max-width: 1500px;
+    /* min-width: 700px;  */
+}
+.Group_margin_bottom {
+    margin-bottom: 34px;
+}
+/*พื้นที่ ชื่อ/input*/
+.Line_grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+}
+/*กรอบเลดิโอ Incentive/ค่าสึกหรอ*/
+.Line_grid_sub_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+/*กรอบเลดิโอ Incentive/ค่าสึกหรอ*/
+.Line_grid_sub_2 {
+    display: grid;
+    grid-template-columns: 1fr 25% 1fr;
+    width: 100%;
+}
+/*ระยะห่างของอินพุด*/
+.Line_margin_bottom {
+    margin-bottom: 15px;
+}
+/*ระยะห่างของเรดิโอแยก*/
+.Line_margin_bottom_double {
+    margin-bottom: 15px;
+}
+.Line_text {
+    display: flex;
+    justify-content: right;
+    padding: 8px 10px 0 0 ;
+    height: 38px;
+    color: #000;
+    font-size: 14px;
+}
+.Line_text_ask {
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    left: 25px;
+    background-color: white;
+    padding: 0 2px;
+}
+.info_icon {
+    color: #6D6D6D;
+    margin: 0 0 6px 2px;
+    height: 20px;
+}
+.Line_ask {
+    position: relative;
+    outline: 1px solid #869BAF;
+    border-radius: 5px;
+    height: 38px;
+    width: 100%;
+    font-size: 14px;
+    color: #000;
+}
+.Line_ask_fix {
+    position: relative;
+    outline: 1px solid #869BAF;
+    border-radius: 5px;
+    height: 38px;
+    width: 100%;
+    font-size: 14px;
+    color: #0043F1;
+}
+.Line_ask_select {
+    position: relative;
+    outline: 1px solid #869BAF;
+    border-radius: 5px;
+    height: 38px;
+    width: 100%;
+    font-size: 14px;
+    color: #000;
+}
+/*กรอบกล่อง*/
+.Line_ask_radio {
+    position: relative;
+    outline: 1px solid #869BAF;
+    border-radius: 5px;
+    height: 55px;
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 14px;
+    color: #000;
+}
+.category {
+    width: 100%;
+    padding: 0 0 0 5px;
+    font-size: 14px;
+    color: #000;
+}
+.deletimg {
+    padding: 10px 10px 0 5px;
+    cursor: pointer;
+}
+
+
+.detel_st {
+    position: absolute; /* ให้ element ลอยอยู่ในตำแหน่งที่กำหนด */
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    border-radius: 9px;
+    width: 160px;
+    padding: 10px 20px;
+    right: 64%; /* จัดชิดขวาของ parent */
+    top: 31%; /* ให้อยู่ใต้ปุ่ม */
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* ให้อยู่เหนือองค์ประกอบอื่น */
+    display: none; /* ซ่อนเริ่มต้น */
+}
+
+.detel_status:hover + .detel_st,
+.detel_st.show {
+    display: block; /* แสดงเมื่อมี class `show` */
+}
+

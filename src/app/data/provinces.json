@@ -1,0 +1,41 @@
+[
+    {
+    "name": "นนทบุรี",
+    "districts": [
+        {
+        "name": "เมืองนนทบุรี",
+        "subdistricts": [
+            { "name": "ตลาดขวัญ", "zipcode": "11000" },
+            { "name": "บางเขน", "zipcode": "11000" },
+            { "name": "บางกระสอ", "zipcode": "11000" }
+        ]
+        },
+        {
+        "name": "บางบัวทอง",
+        "subdistricts": [
+            { "name": "บางรักใหญ่", "zipcode": "11110" },
+            { "name": "บางคูรัด", "zipcode": "11110" }
+        ]
+        }
+    ]
+    },
+    {
+    "name": "กรุงเทพมหานคร",
+    "districts": [
+        {
+        "name": "ปทุมวัน",
+        "subdistricts": [
+            { "name": "รองเมือง", "zipcode": "10330" },
+            { "name": "ปทุมวัน", "zipcode": "10330" }
+        ]
+        },
+        {
+        "name": "บางนา",
+        "subdistricts": [
+            { "name": "บางนาใต้", "zipcode": "10260" },
+            { "name": "บางนากลาง", "zipcode": "10260" }
+        ]
+        }
+    ]
+    }
+]
