@@ -1,0 +1,82 @@
+body {
+    max-width: 414px;
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: center;
+    box-sizing: border-box; 
+}
+
+.headerContainer {
+
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1px;
+}
+
+
+
+.pageContainer {
+    justify-content: start;
+    display: grid;
+    grid-template-columns:  1fr   ;
+    place-items: start;
+    padding: 50px;
+
+}
+
+
+
+.inputlabel {
+    display: 'block';
+    margin: 0;
+    padding: 0;
+    margin: 10px;
+}
+
+.Container input {
+    border: 1px solid #68829BCC;
+    display: block;
+    border-radius: 5px;
+    padding: 6px ;
+}
+
+.Container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #111827;
+}
+
+.radiobox {
+    border: 1px solid #68829BCC;
+    display: flex;
+    justify-content: start;
+    border-radius: 5px;
+    accent-color: #008E00;
+
+}
+.radiobox input{
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin: 10px;
+    align-items: center;
+
+}
+
+.radiobox label {
+    display: flex;
+    align-items: center;     
+}
+
+
+
+
+
+.inputlabel label {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin: 0px;
+}
+
