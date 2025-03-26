@@ -15,11 +15,28 @@ const formRegisrationBook = () => {
     const tooltip6 = 'เวลาเข้า:\n08:30 \n09:00\n10:30';
     const [endDate, setEndDate] = useState("");
     const [today, setToday] = useState("");
+    const [vehicleRecords, setVehicleRecords] = useState([{ vehicleNumber: '', image: null }]);
 
     useEffect(() => {
         const currentDate = new Date().toISOString().split("T")[0]; // ได้ค่า YYYY-MM-DD
         setToday(currentDate);
     }, []);
+
+    const handleAddRecord = () => {
+        setVehicleRecords([...vehicleRecords, { vehicleNumber: '', image: null }]);
+    };
+
+    const handleVehicleChange = (index, e) => {
+        const updatedRecords = [...vehicleRecords];
+        updatedRecords[index].vehicleNumber = e.target.value;
+        setVehicleRecords(updatedRecords);
+    };
+
+    const handleImageChange = (index, e) => {
+        const updatedRecords = [...vehicleRecords];
+        updatedRecords[index].image = e.target.files[0];
+        setVehicleRecords(updatedRecords);
+    };
 
     return (
         <div className='Container'>
@@ -51,7 +68,6 @@ const formRegisrationBook = () => {
                         />
                     </div>
 
-
                     <div className='inputlabel'>
                         <div className="text-right flex items-center justify-start gap-2">
                             <label htmlFor="firstName" className="block">ทะเบียนรถ</label>
@@ -74,6 +90,46 @@ const formRegisrationBook = () => {
                         />
                     </div>
                 </div>
+
+                {/* แสดงข้อมูลทะเบียนรถ และ รูปภาพเล่มทะเบียน */}
+                {vehicleRecords.map((record, index) => (
+                    <div key={index} className="grid grid-cols-2 mt-4">
+                        <div className="inputlabel">
+                            <label htmlFor={`vehicleNumber${index}`} className="block">ทะเบียนรถ {index + 1}</label>
+                            <input
+                                type="text"
+                                id={`vehicleNumber${index}`}
+                                value={record.vehicleNumber}
+                                onChange={(e) => handleVehicleChange(index, e)}
+                                className="p-2 border rounded-lg w-full"
+                            />
+                        </div>
+
+                        <div className="inputlabel">
+                            <label htmlFor={`vehicleImage${index}`} className="block">รูปภาพเล่มทะเบียน {index + 1}</label>
+                            <input
+                                type="file"
+                                id={`vehicleImage${index}`}
+                                accept="image/*"
+                                capture="environment"
+                                onChange={(e) => handleImageChange(index, e)}
+                                className="p-2 border border-[#869BAF] rounded-lg w-full"
+                            />
+                        </div>
+                    </div>
+                ))}
+
+                {/* ปุ่มเพิ่มข้อมูลทะเบียนรถ */}
+                <div className="mt-4 text-center">
+                    <button
+                        type="button"
+                        onClick={handleAddRecord}
+                        className="bg-[#0043F1] text-white font-semibold py-2 px-4 rounded-lg hover:bg-[#0032B8] transition duration-300"
+                    >
+                        เพิ่มชุดข้อมูลทะเบียนรถ
+                    </button>
+                </div>
+
                 {/* ปุ่มบันทึกข้อมูล */}
                 <div className="mt-4">
                     <button
