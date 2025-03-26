@@ -5,7 +5,7 @@ import { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaTimesCircle } from "react-icons/fa";
-import './TabSheet7.css';
+import './tabSheet7.css';
 
 export default function TabSheet7() {
   const [date, setDate] = useState(null);
